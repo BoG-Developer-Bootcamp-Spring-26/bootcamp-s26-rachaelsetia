@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Quicksand font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); /* Ubuntu font */
+
+html {
+    background-color: rgb(231, 223, 215);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(76, 61, 44);
+    margin: 5%;
+    scrollbar-gutter: stable;
+}
+
+.card {
+    background-color: rgb(247, 247, 250);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.card:hover {
+    box-shadow: 0 14px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    padding: 2% 10% 5% 10%;
+}
+
+img {
+    border-radius: 50%;
+    border: 10px double rgb(76, 61, 44);
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+.accordion {
+    background-color: rgb(231, 223, 215);
+    cursor: pointer;
+    width: 100%;
+    padding: 2% 3%;
+    border: 1px solid rgb(246, 244, 242);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.active, .accordion:hover {
+    background-color: rgb(205, 194, 182);
+}
+
+.panel {
+    background-color: rgb(246, 244, 242);
+    text-align: left;
+    padding: 0% 3%;
+    display: block;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.2s ease-out;
+}
