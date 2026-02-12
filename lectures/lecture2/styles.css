@@ -1,0 +1,70 @@
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+        /* sans-serif is the backup font that will be used if Hanken Grotesk doesn't load */
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0.4em;
+    /* margin: 0.4em 0.4em 0.4em 0.4em --- assigns margin for each side (top, right, bottom, left) */
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+img {
+    height: 16em;
+    /* defaults for height and width are "auto", which maintains aspect ratio */
+}
+
+.info-text {
+    font-size: 16px;
+    text-align: left;
+}
+
+button {
+    padding: 0.5em 1.5em; /* pads top/bottom and left/right */
+    background-color: white;
+    color: black;
+    border-radius: 0.75em;
+
+    /* instead of making a new rule for button:hover, we can do this inside the button rule */
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+}
+
+.committee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+        /* adds gaps between items without messing up the alignment */
+    align-items: center;
+
+    /* descendant selector, selects all <p> in this class */
+    p {
+        margin: 0;
+    }
+}
+
+#committee-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    #committee-grid {
+        /* sth idk */
+    }
+}
